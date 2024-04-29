@@ -1,0 +1,51 @@
+body {
+    background-color: midnightblue;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.loader {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+
+.bar_1,.bar_2,.bar_3,.bar_4 {
+    height: 120px;
+    width: 25px;
+    position: relative;
+    animation: load 1.5s infinite;
+}
+
+@keyframes load {
+    50% {
+        transform: scaleY(1.5);
+    }
+}
+
+.bar_1 {
+    background-color: #00bbcc;
+    top: 150px;
+    right: 200px
+}
+
+.bar_2 {
+    background-color: orangered;
+    top: 30px;
+    right: 150px;
+    animation-delay: 0.3s;
+}
+
+.bar_3 {
+    background-color: orchid;
+    bottom: 90px;
+    right: 100px;
+    animation-delay: 0.6s;
+}
+
+.bar_4 {
+    background-color: cornflowerblue;
+    bottom: 210px;
+    right: 50px;
+    animation-delay: 0.9;
+}
